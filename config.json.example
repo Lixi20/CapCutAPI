@@ -4,6 +4,8 @@
   "port": 9001,  // Port number for the local server
   "preview_router": "/draft/downloader",  // Router path for preview functionality
   "is_upload_draft": false,  // Whether to upload drafts to remote storage
+  "draft_save_path": "your-customize-the-draft-storage-path",
+  "is_compress": false,
   "oss_config": {  // General OSS (Object Storage Service) configuration
     "bucket_name": "your-bucket-name",  // OSS bucket name for general storage
     "access_key_id": "your-access-key-id",  // Access key ID for OSS authentication

@@ -1,0 +1,15 @@
+[Unit]
+Description=CAP CUT DRAFT
+After=network-online.target remote-fs.target nss-lookup.target
+Wants=network-online.target
+
+[Service]
+User=huanzhou
+Group=huanzhou
+Type=simple
+ExecStart=/opt/capcutapi/CapCutAPI/venv/bin/python3 /opt/capcutapi/CapCutAPI/capcut_server.py
+StandardOutput=null
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
