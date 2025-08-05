@@ -4,10 +4,10 @@ After=network-online.target remote-fs.target nss-lookup.target
 Wants=network-online.target
 
 [Service]
-User=huanzhou
-Group=huanzhou
+User=your_username
+Group=your_group
 Type=simple
-ExecStart=/opt/capcutapi/CapCutAPI/venv/bin/python3 /opt/capcutapi/CapCutAPI/capcut_server.py
+ExecStart=/usr/bin/python3 /path/to/your/project/capcut_server.py
 StandardOutput=null
 StandardError=journal
 
